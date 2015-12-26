@@ -1,23 +1,19 @@
 #######################################################
 #
-# StoryCtrl
+# ContactCtrl
 #
 #######################################################
 
 module.exports = [
   "$scope", "$timeout", "$location"
   ($scope, $timeout, $location)->
-    class StoryCtrl
+    class ContactCtrl
 
-      name: "story"
+      name: "contact"
 
       constructor: ()->
-        console.log "#### INIT StoryCtrl"
+        console.log "#### INIT ContactCtrl"
         $scope.pageName = @name
-        $scope.next = @next
 
-      next: ()->
-        $location.path("/home")
-
-    new StoryCtrl()
+    new ContactCtrl()
 ]

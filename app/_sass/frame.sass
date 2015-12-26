@@ -7,7 +7,8 @@
 @import "variables"
 
 .frame
-  $size: 2vw
+  $size: 2vh
+  $thickness: 1px
   $color: $cl-red-invert
 
   position: absolute
@@ -49,10 +50,10 @@
       top: $size
 
     &.top
-      border-bottom: 1px solid $color
+      border-bottom: $thickness solid $color
     &.bottom
-      border-top: 1px solid $color
+      border-top: $thickness solid $color
     &.left
-      border-right: 1px solid $color
+      border-right: $thickness solid $color
     &.right
-      border-left: 1px solid $color
+      border-left: $thickness solid $color

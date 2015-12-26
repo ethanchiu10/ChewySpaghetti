@@ -1,6 +1,6 @@
 #######################################################
 #
-# App Controller
+# IntroCtrl
 #
 #######################################################
 
@@ -17,7 +17,7 @@ module.exports = [
         $scope.next = @next
 
       next: ()->
-        $location.path("/story")
+        $location.path("/works")
 
     new IntroCtrl()
 ]
