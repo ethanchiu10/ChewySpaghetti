@@ -1,0 +1,58 @@
+// *************************************
+//
+//  FRAME
+//
+// *************************************
+
+@import "variables"
+
+.frame
+  $size: 2vw
+  $color: $cl-red-invert
+
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+  mix-blend-mode: difference
+
+  >div
+    position: absolute
+    z-index: 10000
+    background: rgba(255,255,255,0)
+    backdrop-filter: brightness(1.5) blur(4px)
+
+  .corner
+    width: $size
+    height: $size
+
+  .top
+    top: 0
+  .bottom
+    bottom: 0
+  .left
+    left: 0
+  .right
+    right: 0
+
+  .border
+    &.top, &.bottom
+      width: calc(100% - #{$size * 2})
+      height: $size
+      left: $size
+
+    &.left, &.right
+      width: $size
+      height: calc(100% - #{$size * 2})
+      top: $size
+
+    &.top
+      border-bottom: 1px solid $color
+    &.bottom
+      border-top: 1px solid $color
+    &.left
+      border-right: 1px solid $color
+    &.right
+      border-left: 1px solid $color

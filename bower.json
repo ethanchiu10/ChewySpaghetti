@@ -1,0 +1,23 @@
+{
+  "name": "HSBC IDD",
+  "version": "0.0.1",
+  "homepage": "https://bitbucket.org/imagination/hsbc-idd",
+  "authors": [
+    "Ethan Chiu"
+  ],
+  "description": "Interactive Digital Directory for the HSBC Main Building in Hong Kong",
+  "dependencies": {
+    "pixi.js": "~2.2.8"
+  },
+  "keywords": [
+    "gulp",
+    "angular",
+    "browserify"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/components"
+  ]
+}

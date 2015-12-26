@@ -1,0 +1,74 @@
+// *************************************
+//
+//  MAIN
+//
+// *************************************
+
+@import "fonts"
+@import "variables"
+@import "animations"
+
+// *************************************
+// BASE
+// *************************************
+
+*, *:before, *:after
+  box-sizing: border-box
+
+a
+  text-decoration: none
+
+ul, li
+  list-style: none
+  margin: 0
+  padding: 0
+
+html, body
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+body
+  margin: 0px
+  padding: 0px
+  font-family: $font-reg
+  background: white
+  color: $cl-red
+
+h1, h2, h3, h4
+  font-weight: 800
+  margin: 0px
+
+.canvas-container
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+
+main
+  position: relative
+  width: 100%
+  height: 100%
+
+div[ng-view]
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+
+
+
+
+// *************************************
+// IMPORT
+// *************************************
+@import "frame"
+@import "views/intro"
+@import "views/story"
+
+
+

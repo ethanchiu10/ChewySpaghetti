@@ -1,0 +1,13 @@
+{
+  "ns": [],
+  "resources": "./resources",
+  "data": "./db",
+  "autoload": true,
+  "mode": "normal",
+  "netPort": 5000,
+  "mid": "hvetem8l",
+  "disableREST": false,
+  "disableAdmin": false,
+  "disableReplication": false,
+  "disableAuthentication": false
+}

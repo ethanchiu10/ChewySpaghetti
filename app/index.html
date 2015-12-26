@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <title>Chewy Spaghetti</title>
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+
+
+
+
+
+
+<body ng-controller="AppCtrl">
+
+
+  <!-- CANVAS -->
+  <div class="canvas-container"></div>
+
+  <!-- VIEW -->
+  <main>
+    <div ng-view
+         ng-cloak
+         class="view-animate {{ pageName }}"></div>
+  </main>
+
+
+  <!-- FRAME -->
+  <div class="frame">
+    <div class="border top" blur="main"></div>
+    <div class="border left"></div>
+    <div class="border bottom"></div>
+    <div class="border right"></div>
+
+    <div class="corner top left"></div>
+    <div class="corner top right"></div>
+    <div class="corner bottom left"></div>
+    <div class="corner bottom right"></div>
+  </div>
+
+
+
+
+
+
+  <script src="components/pixi.js/bin/pixi.js"></script>
+  <script src="scripts/bundle.js"></script>
+</body>
+
+</html>

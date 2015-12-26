@@ -1,0 +1,52 @@
+// *************************************
+//
+//  STORY
+//
+// *************************************
+
+@import "../animations"
+
+
+
+
+// *************************************
+//  STYLING
+// *************************************
+section.story
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+
+
+// *************************************
+//  ANIMATION
+// *************************************
+.view-animate.story
+
+  &.ng-enter
+    $duration: 1s
+    $delay: 2.5s
+
+    transition: all $duration ease $delay
+    opacity: 0
+
+    &.ng-enter-active
+      opacity: 1
+
+
+
+  &.ng-leave
+
+    $duration: 1.5s
+    $delay: 0.3s
+
+    transition: all $duration ease 0s
+    opacity: 1
+
+    &.ng-leave-active
+      opacity: 0
+
