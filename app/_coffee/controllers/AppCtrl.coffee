@@ -5,8 +5,8 @@
 #######################################################
 
 module.exports = [
-  "$scope", "$timeout", "$location", "LineService",
-  ($scope, $timeout, $location, LineService)->
+  "$scope", "$timeout", "$location"
+  ($scope, $timeout, $location)->
     class AppCtrl
 
       constructor: ()->

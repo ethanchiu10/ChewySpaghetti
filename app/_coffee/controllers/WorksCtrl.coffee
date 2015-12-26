@@ -5,8 +5,8 @@
 #######################################################
 
 module.exports = [
-  "$scope", "$timeout", "$location"
-  ($scope, $timeout, $location)->
+  "$scope", "$timeout", "$location", "LineService"
+  ($scope, $timeout, $location, LineService)->
     class WorksCtrl
 
       name: "works"
@@ -14,6 +14,8 @@ module.exports = [
       constructor: ()->
         console.log "#### INIT WorksCtrl"
         $scope.pageName = @name
+
+        # LineService.init()
 
 
     new WorksCtrl()

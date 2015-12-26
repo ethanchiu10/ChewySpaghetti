@@ -19,7 +19,7 @@ module.exports = [
         for i in [0..0]
           line = new Line(
             0
-            100 + i * 5
+            80 + i * 5
             "#0030C1"
             50
             30
