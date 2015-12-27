@@ -8,7 +8,6 @@
 
 .frame
   $size: $frame
-  $thickness: 1px
   $color: $cl-red-invert
 
   position: absolute
@@ -27,13 +26,21 @@
   .line
     &.top, &.bottom
       width: calc(100% - #{$size * 2})
-      height: $thickness
       left: $size
 
+      @media (orientation: landscape)
+        height: 1vw
+      @media (orientation: portrait)
+        height: 1vh
+
     &.left, &.right
-      width: $thickness
       height: calc(100% - #{$size * 2})
       top: $size
+
+      @media (orientation: landscape)
+        width: 1vw
+      @media (orientation: portrait)
+        width: 1vh
 
     &.top
       background: $color
