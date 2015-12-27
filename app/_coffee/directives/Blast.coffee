@@ -8,6 +8,6 @@ module.exports = [
         transclude( scope, (clone, scope) ->
           scope.text = clone.html()
         )
-        element.html scope.text.replace(/[A-z]/g, "<span>" + '$&' + "</span>")
+        element.html scope.text.replace(/[A-z]/g, "<span class='chara'>" + '$&' + "</span>")
     }
 ]

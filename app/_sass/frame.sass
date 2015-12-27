@@ -7,7 +7,7 @@
 @import "variables"
 
 .frame
-  $size: 2vh
+  $size: $frame
   $thickness: 1px
   $color: $cl-red-invert
 
@@ -22,38 +22,28 @@
   >div
     position: absolute
     z-index: 10000
-    background: rgba(255,255,255,0)
-    backdrop-filter: brightness(1.5) blur(4px)
 
-  .corner
-    width: $size
-    height: $size
 
-  .top
-    top: 0
-  .bottom
-    bottom: 0
-  .left
-    left: 0
-  .right
-    right: 0
-
-  .border
+  .line
     &.top, &.bottom
       width: calc(100% - #{$size * 2})
-      height: $size
+      height: $thickness
       left: $size
 
     &.left, &.right
-      width: $size
+      width: $thickness
       height: calc(100% - #{$size * 2})
       top: $size
 
     &.top
-      border-bottom: $thickness solid $color
+      background: $color
+      top: $size
     &.bottom
-      border-top: $thickness solid $color
+      background: $color
+      bottom: $size
     &.left
-      border-right: $thickness solid $color
+      background: $color
+      left: $size
     &.right
-      border-left: $thickness solid $color
+      background: $color
+      right: $size

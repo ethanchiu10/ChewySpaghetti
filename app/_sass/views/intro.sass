@@ -52,18 +52,11 @@ section.intro
 
   h1
     position: relative
-    text-transform: uppercase
-    font-weight: 100
+
     mix-blend-mode: difference
     color: $cl-red-invert
 
-    @media (orientation: landscape)
-      font-size: 2.5vw
-    @media (orientation: portrait)
-      font-size: 2.5vh
 
-    span
-      display: inline-block
 
 
 
@@ -82,7 +75,7 @@ section.intro
     transition: all ($duration + $delay * 9) ease 1s
 
     @for $i from 1 through 9
-      span:nth-child(#{$i})
+      .chara:nth-child(#{$i})
         opacity: 0
         $y: 100vh
         @if $i % 2 == 0
@@ -92,7 +85,7 @@ section.intro
     &.ng-enter-active
 
       @for $i from 1 through 9
-        span:nth-child(#{$i})
+        .chara:nth-child(#{$i})
           opacity: 1
           transform: none
           $d: $delay * $i
@@ -117,7 +110,7 @@ section.intro
             transition: transform $duration ease (0.2s * ($i - 1) + 0.2s)
 
 
-      span
+      .chara
         $delay: $duration / 2
         transition-property: transform, opacity
         transition-duration: $duration, $duration - $delay
@@ -126,7 +119,7 @@ section.intro
 
       @for $i from 1 through 9
         $max: 300
-        span:nth-child(#{$i})
+        .chara:nth-child(#{$i})
           $x: - 50vw * (5 - $i + 1) / 5
           @if $i > 5
             $x: 50vw * ($i - 5) / 4
