@@ -6,9 +6,12 @@
 
 @import "variables"
 
+
+
+
+
 .frame
   $size: $frame
-  $color: $cl-red-invert
 
   position: absolute
   top: 0
@@ -24,9 +27,14 @@
 
 
   .line
+
+    // animation: frame-color 2s linear 0s infinite alternate
+    background: $cl-red-invert
+    // background: white
+
     &.top, &.bottom
       width: calc(100% - #{$size * 2})
-      height: 10px
+      height: $frame-thickness
       left: $size
 
       // @media (orientation: landscape)
@@ -37,7 +45,7 @@
 
     &.left, &.right
       height: calc(100% - #{$size * 2})
-      width: 10px
+      width: $frame-thickness
       top: $size
 
       // @media (orientation: landscape)
@@ -47,14 +55,18 @@
 
 
     &.top
-      background: $color
+      // background: $cl-red-invert
       top: $size
     &.bottom
-      background: $color
+      // background: $cl-red-invert
       bottom: $size
     &.left
-      background: $color
+      // background: $cl-red-invert
       left: $size
     &.right
-      background: $color
+      // background: $cl-red-invert
       right: $size
+
+
+
+
