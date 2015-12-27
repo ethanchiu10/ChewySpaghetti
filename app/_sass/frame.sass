@@ -26,21 +26,25 @@
   .line
     &.top, &.bottom
       width: calc(100% - #{$size * 2})
+      height: 10px
       left: $size
 
-      @media (orientation: landscape)
-        height: 1vw
-      @media (orientation: portrait)
-        height: 1vh
+      // @media (orientation: landscape)
+      //   height: 1vw
+      // @media (orientation: portrait)
+      //   height: 1vh
+
 
     &.left, &.right
       height: calc(100% - #{$size * 2})
+      width: 10px
       top: $size
 
-      @media (orientation: landscape)
-        width: 1vw
-      @media (orientation: portrait)
-        width: 1vh
+      // @media (orientation: landscape)
+      //   width: 1vw
+      // @media (orientation: portrait)
+      //   width: 1vh
+
 
     &.top
       background: $color
