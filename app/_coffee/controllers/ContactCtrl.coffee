@@ -15,5 +15,5 @@ module.exports = [
         console.log "#### INIT ContactCtrl"
         $scope.pageName = @name
 
-    new ContactCtrl()
+    window.ContactCtrl = new ContactCtrl()
 ]

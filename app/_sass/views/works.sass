@@ -29,8 +29,8 @@ section.works
     width: 100%
     text-align: center
     z-index: 100
-    mix-blend-mode: difference
-    color: $cl-red-invert
+    mix-blend-mode: $blend-mode
+    color: $cl-main-invert
     opacity: 0
 
 
@@ -52,15 +52,20 @@ section.works
       width: 100%
       height: $item-height
       cursor: pointer
-      background: black
+      background-color: $cl-contrast
 
       position: relative
       display: flex
-      align-items: center
+      flex-direction: column
+      justify-content: center
 
 
-      h1
-        color: white
+    h1, h3
+      color: $cl-bg
+
+    h1
+      margin-bottom: 0.5%
+
 
 
     @for $i from 1 through 6
@@ -69,18 +74,18 @@ section.works
 
     &:nth-child(odd)
       .clip-wrap
-        justify-content: flex-start
+        align-items: flex-start
         clip-path: polygon( 0% 0%, 100% 50%, 0% 100%, 0% 0% )
 
-      h1
+      h1, h3
         padding-left: $frame * 2 + $frame-thickness
 
     &:nth-child(even)
       .clip-wrap
-        justify-content: flex-end
+        align-items: flex-end
         clip-path: polygon( 100% 0%, 0% 50%, 100% 100% )
 
-      h1
+      h1, h3
         padding-right: $frame * 2 + $frame-thickness
 
 
@@ -115,7 +120,7 @@ section.works
         transform: none
         @for $i from 1 through 6
           &:nth-child(#{$i})
-            transition: transform 0.6s ease (2s + 0.15s * $i)
+            transition: transform 0.6s $ease-out-expo (2s + 0.2s * $i)
 
 
 

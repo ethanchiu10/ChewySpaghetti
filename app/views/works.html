@@ -1,57 +1,20 @@
 <section class="works">
 
 
-  <h1 class="title" blast>Works</h1>
+  <h1 class="title cl-i" blast>Works</h1>
 
   <ul>
 
-    <li class="item">
+    <li class="item" ng-click="select($event)" ng-repeat="project in projects">
 
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
+      <div class="clip-wrap bg-cl">
+        <!-- <img ng-src="/images/{{ project.hero }}" /> -->
+        <h1>{{ project.title }}</h1>
+        <h3>{{ project.company }}</h3>
       </div>
 
     </li>
 
-    <li class="item">
-
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
-      </div>
-
-    </li>
-
-    <li class="item">
-
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
-      </div>
-
-    </li>
-
-    <li class="item">
-
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
-      </div>
-
-    </li>
-
-    <li class="item">
-
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
-      </div>
-
-    </li>
-
-    <li class="item">
-
-      <div class="clip-wrap">
-        <h1>Casino Directory</h1>
-      </div>
-
-    </li>
 
   </ul>
 

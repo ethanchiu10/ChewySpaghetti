@@ -20,8 +20,12 @@ module.exports = [
           angular.element( document.querySelector("div[ng-view].#{@name}") ).addClass('ng-leave')
           angular.element( document.querySelector("div[ng-view].#{@name}") ).addClass('ng-leave-active')
 
+
+
       next: ()->
         $location.path("/works")
 
-    new IntroCtrl()
+
+
+    window.IntroCtrl = new IntroCtrl()
 ]

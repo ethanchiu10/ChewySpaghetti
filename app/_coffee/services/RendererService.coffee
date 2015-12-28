@@ -1,6 +1,6 @@
 #######################################################
 #
-# App Service
+# RendererService
 #
 #######################################################
 
@@ -18,7 +18,6 @@ module.exports = [
 
       init: ()=>
         interactive = true
-        @stage = new PIXI.Stage(0x000000, interactive)
         @stage = new PIXI.Stage(0xFFFFFF, interactive)
         @renderer = PIXI.autoDetectRenderer(
           window.innerWidth * window.devicePixelRatio
@@ -26,7 +25,10 @@ module.exports = [
           null
           true
         )
-        document.querySelector(".canvas-container").appendChild @renderer.view
+
+        container = document.querySelector(".canvas-container")
+        return if not container?
+        container.appendChild @renderer.view
         requestAnimationFrame @animate
 
 

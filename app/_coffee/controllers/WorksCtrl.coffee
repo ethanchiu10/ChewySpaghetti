@@ -5,8 +5,8 @@
 #######################################################
 
 module.exports = [
-  "$scope", "$timeout", "$location", "LineService"
-  ($scope, $timeout, $location, LineService)->
+  "$scope", "$timeout", "$location", "$http", "DataService"
+  ($scope, $timeout, $location, $http, DataService)->
     class WorksCtrl
 
       name: "works"
@@ -14,9 +14,14 @@ module.exports = [
       constructor: ()->
         console.log "#### INIT WorksCtrl"
         $scope.pageName = @name
+        $scope.select = @select
 
-        # LineService.init()
+        $scope.projects = DataService.projects
+
+      select: ( evt )->
+        console.log evt
+        evt.target.classList.add 'active'
 
 
-    new WorksCtrl()
+    window.WorksCtrl = new WorksCtrl()
 ]

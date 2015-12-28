@@ -11,7 +11,6 @@
 
 
 .frame
-  $size: $frame
 
   position: absolute
   top: 0
@@ -19,7 +18,7 @@
   width: 100%
   height: 100%
   pointer-events: none
-  mix-blend-mode: difference
+  mix-blend-mode: $blend-mode
 
   >div
     position: absolute
@@ -27,45 +26,29 @@
 
 
   .line
-
-    // animation: frame-color 2s linear 0s infinite alternate
-    background: $cl-red-invert
-    // background: white
+    background-color: $cl-main-invert
 
     &.top, &.bottom
-      width: calc(100% - #{$size * 2})
+      width: calc(100% - #{$frame * 2})
       height: $frame-thickness
-      left: $size
-
-      // @media (orientation: landscape)
-      //   height: 1vw
-      // @media (orientation: portrait)
-      //   height: 1vh
-
+      left: $frame
 
     &.left, &.right
-      height: calc(100% - #{$size * 2})
+      height: calc(100% - #{$frame * 2})
       width: $frame-thickness
-      top: $size
-
-      // @media (orientation: landscape)
-      //   width: 1vw
-      // @media (orientation: portrait)
-      //   width: 1vh
-
+      top: $frame
 
     &.top
-      // background: $cl-red-invert
-      top: $size
+      top: $frame
+
     &.bottom
-      // background: $cl-red-invert
-      bottom: $size
+      bottom: $frame
+
     &.left
-      // background: $cl-red-invert
-      left: $size
+      left: $frame
+
     &.right
-      // background: $cl-red-invert
-      right: $size
+      right: $frame
 
 
 
