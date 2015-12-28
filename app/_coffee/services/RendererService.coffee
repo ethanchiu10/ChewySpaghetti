@@ -17,11 +17,10 @@ module.exports = [
         @init()
 
       init: ()=>
-        interactive = true
-        @stage = new PIXI.Stage(0xFFFFFF, interactive)
+        @stage = new PIXI.Stage(0xFFFFFF)
         @renderer = PIXI.autoDetectRenderer(
-          window.innerWidth * window.devicePixelRatio
-          window.innerHeight * window.devicePixelRatio
+          window.innerWidth
+          window.innerHeight
           null
           true
         )

@@ -28,7 +28,6 @@ section.intro
     left: 50%
     border-radius: 50%
     background-color: $cl-contrast
-    // background: #9C9DB3
     transform: scale(0)
 
 
@@ -123,10 +122,10 @@ section.intro
 
       .chara
         $delay: $duration / 2
-        transition-property: transform, opacity
-        transition-duration: $duration, $duration - $delay
-        transition-timing-function: ease
-        transition-delay: 0s, $delay
+        transition-property: transform, opacity !important
+        transition-duration: $duration, $duration - $delay  !important
+        transition-timing-function: ease !important
+        transition-delay: 0s, $delay !important
 
       @for $i from 1 through 9
         .chara:nth-child(#{$i})

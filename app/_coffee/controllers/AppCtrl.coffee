@@ -14,7 +14,7 @@ module.exports = [
 
         $scope.$on '$routeChangeSuccess', ( evt, currRoute, prevRoute )=>
           console.log currRoute
-          $scope.curr = currRoute.$$route.originalPath
+          $scope.curr = currRoute?.$$route?.originalPath
 
         $scope.color = "black"
         $scope.$watch 'color', (next, prev)->

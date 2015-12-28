@@ -39,53 +39,50 @@ section.works
   $item-height: 100% / $num-items
 
 
-  .item
+  ul
     position: absolute
+    top: 0
     left: 0
     width: 100%
     height: 100%
-    overflow: hidden
+    overflow: auto
+
+    &::-webkit-scrollbar
+      display: none
+
+  .item
+    position: relative
+    width: 100%
+    height: $item-height
 
 
+    svg
+      position: absolute
+      fill: $cl-contrast
 
-    .clip-wrap
-      width: 100%
-      height: $item-height
-      cursor: pointer
-      background-color: $cl-contrast
 
+    .content
+      color: $cl-bg
       position: relative
+      width: 100%
+      height: 100%
       display: flex
       flex-direction: column
       justify-content: center
-
-
-    h1, h3
-      color: $cl-bg
 
     h1
       margin-bottom: 0.5%
 
 
 
-    @for $i from 1 through 6
-      &:nth-child(#{$i})
-        top: $item-height * ( $i - 1 )
-
     &:nth-child(odd)
-      .clip-wrap
+      .content
         align-items: flex-start
-        clip-path: polygon( 0% 0%, 100% 50%, 0% 100%, 0% 0% )
-
-      h1, h3
         padding-left: $frame * 2 + $frame-thickness
 
     &:nth-child(even)
-      .clip-wrap
+      .content
         align-items: flex-end
-        clip-path: polygon( 100% 0%, 0% 50%, 100% 100% )
-
-      h1, h3
         padding-right: $frame * 2 + $frame-thickness
 
 
@@ -98,11 +95,12 @@ section.works
 .view-animate.works
 
   &.ng-enter
-    $duration: 1.5s
-    $delay: 0s
-    $offset: 0.4s
-    transition: all $offset * 9 + 1s ease $delay
+    $duration: 0.6s
+    $delay: 0.2s
+    transition: all (2s + $delay * 4 + $duration) ease 0s
 
+    // ul
+    //   overflow: hidden
 
     .item
       &:nth-child(odd)
@@ -118,14 +116,9 @@ section.works
 
       .item
         transform: none
-        @for $i from 1 through 6
+        @for $i from 1 through 4
           &:nth-child(#{$i})
-            transition: transform 0.6s $ease-out-expo (2s + 0.2s * $i)
-
-
-
-
-
+            transition: transform $duration $ease-out-expo (2s + 0.2s * $i)
 
 
 

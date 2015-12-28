@@ -15,6 +15,7 @@ require 'angular'
 require 'angular-route'
 require 'angular-animate'
 require 'angular-touch'
+require 'angular-swipe/src/angular-swipe'
 
 # require 'gsap/src/minified/TweenLite.min'
 # require 'gsap/src/minified/TweenMax.min'
@@ -24,7 +25,7 @@ require 'angular-touch'
 #######################################################
 # Setup
 #######################################################
-app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch'])
+app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch', 'swipe'])
 
 
 

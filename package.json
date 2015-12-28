@@ -5,6 +5,7 @@
     "angular": "1.4.8",
     "angular-animate": "1.4.8",
     "angular-route": "1.4.8",
+    "angular-swipe": "git+https://github.com/marmorkuchen-net/angular-swipe.git",
     "angular-touch": "1.4.8",
     "blast-text": "^2.0.0",
     "bower": "latest",

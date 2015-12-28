@@ -14,5 +14,86 @@
     "technologies": "HTML5, SASS, CoffeeScript, Three.js",
     "hero": "Galaxy_Hero.png",
     "url": null
+  },
+  {
+    "title": "Mall Directory",
+    "type": "Kiosk App",
+    "company": "Pacific Place",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "PacificPlace_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Casino Directory",
+    "type": "Kiosk App",
+    "company": "Galaxy Macau",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "Galaxy_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Mall Directory",
+    "type": "Kiosk App",
+    "company": "Pacific Place",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "PacificPlace_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Casino Directory",
+    "type": "Kiosk App",
+    "company": "Galaxy Macau",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "Galaxy_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Mall Directory",
+    "type": "Kiosk App",
+    "company": "Pacific Place",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "PacificPlace_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Casino Directory",
+    "type": "Kiosk App",
+    "company": "Galaxy Macau",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "Galaxy_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Mall Directory",
+    "type": "Kiosk App",
+    "company": "Pacific Place",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "PacificPlace_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Casino Directory",
+    "type": "Kiosk App",
+    "company": "Galaxy Macau",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "Galaxy_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Mall Directory",
+    "type": "Kiosk App",
+    "company": "Pacific Place",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "PacificPlace_Hero.png",
+    "url": null
+  },
+  {
+    "title": "Casino Directory",
+    "type": "Kiosk App",
+    "company": "Galaxy Macau",
+    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
+    "hero": "Galaxy_Hero.png",
+    "url": null
   }
+
 ]
