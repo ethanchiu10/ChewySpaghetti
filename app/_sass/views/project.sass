@@ -39,7 +39,12 @@ section.project
 
   .content
     width: 100%
-    line-height: 1.3em
+    @media (orientation: landscape)
+      font-size: 2vw
+      line-height: 2.7vw
+    @media (orientation: portrait)
+      font-size: 2vh
+      line-height: 2.7vh
 
 
     >*
@@ -56,18 +61,20 @@ section.project
 
 
   .description
-    margin: 5px 0px 25px
+    margin: 1% 0px 4%
 
 
 
-  .technologies
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
 
-    li
-      display: inline-block
-      margin-right: 20px
+
+  // .technologies
+  //   display: flex
+  //   flex-direction: row
+  //   flex-wrap: wrap
+
+  //   li
+  //     display: inline-block
+  //     margin-right: 20px
 
 
   .features
@@ -75,13 +82,13 @@ section.project
     padding-bottom: $frame * 2 + $frame-thickness
 
     .feature
-      margin: 30px 0px 0px
+      margin: 3vh 0px 0px
 
     .name
       margin: 0px
 
     .info
-      margin: 4px 20px 10px
+      margin: 1vh 20px 2vh
 
       li
         list-style-type: disc
