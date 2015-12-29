@@ -1,17 +1,17 @@
-# HSBC IDD
+# Chewy Spaghetti Website
 
-Interactive Digital Directory for the HSBC Main Building in Hong Kong
+Personal portfolio site
 
 ###### Client: HSBC
-###### ID: hsbc-idd
+###### ID: chewyspaghetti
 ###### Team: Imagination Hong Kong
 ###### Status: In development
 
 ## Installation
 
-1. have **Read** access to the [imagination/hsbc-idd](https://bitbucket.org/imagination/hsbc-idd) repository
+1. have **Read** access to the [ethanchiu10/chewyspaghetti](https://github.com/ethanchiu10/chewyspaghetti) repository
 
-1. have your **SSH Keys** installed at [Bitbucket](https://bitbucket.org/)
+1. have your **SSH Keys** installed at [Bitbucket](https://github.com/)
 
 1. install [GIT](http://git-scm.com/)
 
@@ -25,8 +25,8 @@ Interactive Digital Directory for the HSBC Main Building in Hong Kong
 
 1. download this repository and install via **Node Package Manager** and **Bower**, and test:
 
-        $ git clone git@bitbucket.org:imagination/hsbc-idd.git
-        $ cd hsbc-idd
+        $ git clone git@github.com:ethanchiu10/chewyspaghetti.git
+        $ cd chewyspaghetti
         $ npm install
         $ bower install
 
