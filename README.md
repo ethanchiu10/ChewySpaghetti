@@ -2,9 +2,9 @@
 
 Personal portfolio site
 
-###### Client: HSBC
+###### Client: Ethan Chiu
 ###### ID: chewyspaghetti
-###### Team: Imagination Hong Kong
+###### Team: Ethan Chiu
 ###### Status: In development
 
 ## Installation
