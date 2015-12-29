@@ -30,7 +30,7 @@ section.works
     text-align: center
     z-index: 100
     mix-blend-mode: $blend-mode
-    color: $cl-main-invert
+    color: $cl-main-i
     opacity: 0
 
 
@@ -54,16 +54,25 @@ section.works
     position: relative
     width: 100%
     height: $item-height
-
+    cursor: pointer
 
     svg
       position: absolute
-      fill: $cl-contrast
+      fill: $cl-main
 
+    .hover
+      fill: $cl-main-c
+      pointer-events: none
+      transition: transform 0.5s ease 0s
+
+    &:hover
+      .hover
+        transform: none !important
 
     .content
       color: $cl-bg
       position: relative
+      z-index: 100
       width: 100%
       height: 100%
       display: flex
@@ -76,11 +85,15 @@ section.works
 
 
     &:nth-child(odd)
+      .hover
+        transform: translateX(-100%)
       .content
         align-items: flex-start
         padding-left: $frame * 2 + $frame-thickness
 
     &:nth-child(even)
+      .hover
+        transform: translateX(100%)
       .content
         align-items: flex-end
         padding-right: $frame * 2 + $frame-thickness
