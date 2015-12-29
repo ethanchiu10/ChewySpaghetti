@@ -13,11 +13,11 @@ module.exports = [
 
         prevPath = HistoryService.getPrevious()?.$$route?.originalPath
 
-        console.log 999, HistoryService.history, prevPath, delayMap
+        # console.log 999, HistoryService.history, prevPath, delayMap
 
         time = delayMap[ prevPath ] || 0
 
-        console.log "DELAY ANIM BY:", prevPath, prevPath in delayMap, time
+        # console.log "DELAY ANIM BY:", prevPath, prevPath in delayMap, time
 
 
         delay = $q.defer()

@@ -14,7 +14,7 @@ module.exports = [
         console.log "#### INIT DataService"
 
       getProjects: ()=>
-        console.log 'DataService.resolve'
+        # console.log 'DataService.getProjects'
         $http.get('/data/projects.json').then(
           (response)=>
             @projects = response.data

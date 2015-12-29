@@ -16,11 +16,11 @@ module.exports = [
         console.log "#### INIT HistoryService"
 
         $rootScope.$on '$routeChangeStart', ( evt, currRoute, prevRoute )=>
-          console.log 111, '$routeChangeStart', currRoute
+          # console.log 111, '$routeChangeStart', currRoute
           @history.push currRoute
 
         $rootScope.$on '$routeChangeSuccess', ( evt, currRoute, prevRoute )=>
-          console.log 222, '$routeChangeSuccess', currRoute
+          # console.log 222, '$routeChangeSuccess', currRoute
 
       getCurrent: ()->
         return _.last @history
