@@ -17,19 +17,15 @@ module.exports = [
         $scope.select = @select
         $scope.nextPage = @nextPage
         $scope.prevPage = @prevPage
-
         @init()
 
 
 
       init: ()->
-
         $scope.projects = DataService.projects
-
         numItemsPerPage = 4
         for project, i in $scope.projects
           project.page = Math.floor(i / numItemsPerPage)
-          console.log i, project.page
 
         $scope.numPages = Math.ceil(i / numItemsPerPage)
         $scope.currentPage = 0
@@ -37,16 +33,25 @@ module.exports = [
 
 
 
-      select: ( evt )->
-        console.log evt
-        evt.target.classList.add 'active'
+      select: ( order, project )->
+        $scope.selected =
+          order: order
+          project: project
+        console.log $scope.selected
 
-      # nextPage: ()->
-      #   $scope.currentPage += 1
-      #   if $scope.currentPage >= $scope.numPages
-      #     $scope.currentPage = 0
-      #   console.log 'nextPage', $scope.currentPage, $scope.numPages
 
+      nextPage: ()->
+        angular.element( document.querySelector('.items') ).removeClass('down').addClass('up')
+        $scope.currentPage += 1
+        if $scope.currentPage >= $scope.numPages
+          $scope.currentPage = 0
+
+
+      prevPage: ()->
+        angular.element( document.querySelector('.items') ).removeClass('up').addClass('down')
+        $scope.currentPage -= 1
+        if $scope.currentPage < 0
+          $scope.currentPage = $scope.numPages - 1
 
 
 
