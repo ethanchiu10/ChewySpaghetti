@@ -28,7 +28,6 @@
     "gulp-sass": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
-    "imag-cms": "git+ssh://git@bitbucket.org:imagination/node-cms.git",
     "jquery": "^2.1.4",
     "underscore": "^1.7.0",
     "vinyl-paths": "^2.1.0"
@@ -57,14 +56,6 @@
   "config": {
     "server": {
       "port": 8000
-    },
-    "cms": {
-      "config": "./cms.json",
-      "resources": "./resources",
-      "data": "./db",
-      "netPort": 5000,
-      "autoload": true,
-      "mode": "normal"
     }
   },
   "ignore": [

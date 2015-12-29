@@ -40,9 +40,6 @@ Backend       = require './'
 #######################################################
 gulp.task "server", ->
 
-  ['config', 'resources', 'data'].forEach (key)->
-    pkg.config.cms[key] = path.resolve(pkg.config.cms[key])
-
   app = express()
   app.use injectReload({port: pkg.config.server.port + 30000})
   app.use Backend(pkg.config)
