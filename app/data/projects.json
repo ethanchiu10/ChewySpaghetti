@@ -1,34 +1,10 @@
 [
 
-
   {
-    "id": "pacificplace",
-    "title": "Mall Directory",
-    "company": "Pacific Place",
-    "url": null,
-    "description": "A beautifully animated interactive digital directory including a 3D CoverFlow and 3D Map",
-    "technologies": [
-      "HTML5",
-      "SASS",
-      "CoffeeScript",
-      "AngularJS",
-      "three.js"
-    ],
-    "hero": "hero.jpg",
-    "features": [
-      {
-        "name": "Coverflow",
-        "description": "",
-        "image": "hero.jpg"
-      }
-    ]
-  },
-
-
-  {
-    "id": "galaxymacau",
+    "id": "galaxy-idd",
     "title": "Casino Directory",
     "company": "Galaxy Macau",
+    "country": "Macau",
     "url": null,
     "description": "A beautifully animated interactive digital directory including a 3D CoverFlow and 3D Map",
     "technologies": [
@@ -75,8 +51,137 @@
       }
     ]
 
-  }
+  },
 
+
+
+  {
+    "id": "lincoln-ps",
+    "title": "Car Configurator",
+    "company": "Lincoln China",
+    "country": "China",
+    "url": null,
+    "description": "The Lincoln Personalization Studio is a 3D Car Configurator used at dealerships throughout China",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "CoffeeScript",
+      "AngularJS",
+      "three.js",
+      "Unity",
+      "Autodesk VRED"
+    ],
+    "hero": "hero.jpg",
+    "features": [
+      {
+        "name": "Social Login",
+        "info": [
+          "Register and Login with your WeChat account"
+        ],
+        "image": "01_login.png"
+      },
+      {
+        "name": "Multiple Models",
+        "info": [
+          "Supports multiple models"
+        ],
+        "image": "04_select.png"
+      },
+      {
+        "name": "3D Car Model",
+        "info": [
+          "Select exterior paint",
+          "NFC enabled Paint Swatches allows users to see and feel the final physical material",
+          "Rotatable 3D Model"
+        ],
+        "image": "08_paint.png"
+      },
+      {
+        "name": "Interior Configuration",
+        "info": [
+          "Select seat color and trim"
+        ],
+        "image": "11_interior.png"
+      }
+    ]
+
+  },
+
+  {
+    "id": "art-basel-fontart",
+    "title": "Digital Art",
+    "company": "UBS Art Basel",
+    "country": "Hong Kong",
+    "url": null,
+    "description": "Create a digital art piece simply by tweeting #UBSArt at the VIP Lounge at Art Basel 2014",
+    "technologies": [
+      "HTML5",
+      "CoffeeScript",
+      "AngularJS",
+      "Easel JS",
+      "TweenJS"
+    ],
+    "hero": "hero.jpg",
+    "features": [
+      {
+        "name": "Font Art",
+        "info": [
+          "See your tween turned in to art in real time"
+        ],
+        "image": "sample.png"
+      },
+      {
+        "name": "Unique Pieces",
+        "info": [
+          "Every piece generated is completely unique, even if you text the same thing as your friend!"
+        ],
+        "image": "sample2.png"
+      }
+    ]
+
+  },
+
+
+
+  {
+    "id": "ge-innovation-turkey",
+    "title": "Data Visualization",
+    "company": "GE Turkey",
+    "country": "Hong Kong",
+    "url": null,
+    "description": "Several data visualization activations were created for the GE Innovation Center in Istanbul, Turkey",
+    "technologies": [
+      "HTML5",
+      "CoffeeScript",
+      "AngularJS",
+      "three.js"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Innovation Barometer",
+        "info": [
+          "Shows which countries are the most innovative and supportive of innovation"
+        ],
+        "image": "barometer.png"
+      },
+      {
+        "name": "Trends Table",
+        "info": [
+          "View articles on the latest GE innovation trends and concepts"
+        ],
+        "image": "trends.png"
+      },
+      {
+        "name": "Stylus",
+        "info": [
+          "View articles on the latest GE innovation examples"
+        ],
+        "image": "stylus.png"
+      }
+    ]
+
+  }
 
 
 ]
