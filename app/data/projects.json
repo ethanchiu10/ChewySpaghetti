@@ -1,99 +1,64 @@
 [
+
+
   {
+    "id": "pacificplace",
     "title": "Mall Directory",
-    "type": "Kiosk App",
     "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
+    "url": null,
+    "description": "A beautifully animated interactive digital directory including a 3D CoverFlow and 3D Map",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "CoffeeScript",
+      "AngularJS",
+      "three.js"
+    ],
+    "hero": "hero.jpg",
+    "features": [
+      {
+        "name": "Coverflow",
+        "description": "",
+        "image": "hero.jpg"
+      }
+    ]
   },
+
+
   {
+    "id": "galaxymacau",
     "title": "Casino Directory",
-    "type": "Kiosk App",
     "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Mall Directory",
-    "type": "Kiosk App",
-    "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Casino Directory",
-    "type": "Kiosk App",
-    "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Mall Directory",
-    "type": "Kiosk App",
-    "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Casino Directory",
-    "type": "Kiosk App",
-    "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Mall Directory",
-    "type": "Kiosk App",
-    "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Casino Directory",
-    "type": "Kiosk App",
-    "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Mall Directory",
-    "type": "Kiosk App",
-    "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Casino Directory",
-    "type": "Kiosk App",
-    "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Mall Directory",
-    "type": "Kiosk App",
-    "company": "Pacific Place",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "PacificPlace_Hero.png",
-    "url": null
-  },
-  {
-    "title": "Casino Directory",
-    "type": "Kiosk App",
-    "company": "Galaxy Macau",
-    "technologies": "HTML5, SASS, CoffeeScript, Three.js",
-    "hero": "Galaxy_Hero.png",
-    "url": null
+    "url": null,
+    "description": "A beautifully animated interactive digital directory including a 3D CoverFlow and 3D Map",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "CoffeeScript",
+      "AngularJS",
+      "three.js"
+    ],
+    "hero": "hero.jpg",
+    "features": [
+      {
+        "name": "Directory Listing",
+        "info": "3D animated Coverflow sortable by category or alphabetically",
+        "image": "coverflow.png"
+      },
+      {
+        "name": "Map",
+        "info": "Pannable, rotatable, zoomable, color coded 3D map",
+        "image": "services.png"
+      },
+      {
+        "name": "Directory Listing",
+        "info": "3D animated Coverflow sortable by category or alphabetically",
+        "image": "coverflow.png"
+      }
+    ]
+
   }
+
+
 
 ]

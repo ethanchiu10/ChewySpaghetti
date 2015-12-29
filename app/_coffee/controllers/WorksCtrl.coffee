@@ -37,7 +37,10 @@ module.exports = [
         $scope.selected =
           order: order
           project: project
-        console.log $scope.selected
+        $timeout ()->
+
+          $location.path "/project/#{project.id}"
+        , 1500
 
 
       nextPage: ()->

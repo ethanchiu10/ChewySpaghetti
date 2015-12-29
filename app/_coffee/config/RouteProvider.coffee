@@ -23,6 +23,8 @@ module.exports = [
       ]
 
 
+
+
     $routeProvider
       .when('/intro', {
         templateUrl: '/views/intro.html'
@@ -39,6 +41,14 @@ module.exports = [
           data: dataResolve()
         }
       })
+      .when('/project/:id', {
+        templateUrl: '/views/project.html'
+        controller: 'ProjectCtrl'
+        resolve: {
+          anim: animResolve(0),
+          data: dataResolve()
+        }
+      })
       .when('/contact', {
         templateUrl: '/views/contact.html'
         controller: 'ContactCtrl'
@@ -49,4 +59,7 @@ module.exports = [
       .otherwise({
         redirectTo: '/intro'
       })
+
+
+
 ]

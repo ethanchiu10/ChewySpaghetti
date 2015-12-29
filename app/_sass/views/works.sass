@@ -22,7 +22,6 @@ section.works
   display: flex
   justify-content: center
   align-items: center
-  // display: none !important
 
 
   .title
@@ -56,6 +55,17 @@ section.works
     height: $item-height
     max-height: $item-height
     cursor: pointer
+    z-index: 1
+    // display: flex
+    // flex-direction: column
+
+    // &:before, &:after
+    //   display: block
+    //   content: ''
+    //   flex: 1
+    //   width: 100%
+
+
 
     @for $i from 0 through 3
       &.order-#{$i}
@@ -63,6 +73,8 @@ section.works
 
     svg
       position: absolute
+      top: 0
+      left: 0
       fill: $cl-main
 
     .hover
@@ -82,11 +94,7 @@ section.works
       flex-direction: row
       align-items: center
 
-      &:before
-        content: ''
-        flex: 1
-
-      &:after
+      &:before, &:after
         content: ''
         flex: 1
 
@@ -144,25 +152,25 @@ section.works
   // SELECT ANIMATION
   .item
 
+    $duration: 0.8s
+
     &.anim-out-up
-      transition: all 1s ease 0s !important
+      transition: all $duration ease 0s !important
       transform: translateY(-100vh)
 
     &.anim-out-down
-      transition: all 1s ease 0s !important
+      transition: all $duration ease 0s !important
       transform: translateY(100vh)
 
     &.selected
       top: 0
       height: 100%
       max-height: 100%
-      transition: all 0.5s ease 1s !important
-      // .content
-      //   padding: 0
-      //   transition: all 0.5s ease 0s
+      transition: all $duration ease $duration !important
+      z-index: 2
 
       svg
-        transition: all 0.5s ease 0s
+        transition: all $duration ease 0s
 
 
 
@@ -171,7 +179,7 @@ section.works
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
         .content
           &:before, &:after, .content-wrap
-            transition: all 0.5s ease 0s
+            transition: all $duration ease 0s
 
           &:before
             flex: 1
@@ -180,7 +188,7 @@ section.works
           .company-wrap
             &:before
               flex: 1
-              transition: all 0.5s ease 0s
+              transition: all $duration ease 0s
 
 
       &.order-1, &.order-3
@@ -188,7 +196,7 @@ section.works
           clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%)
         .content
           &:before, &:after, .content-wrap
-            transition: all 0.5s ease 0s
+            transition: all $duration ease 0s
 
           &:after
             flex: 1
@@ -197,7 +205,7 @@ section.works
           .company-wrap
             &:after
               flex: 1
-              transition: all 0.5s ease 0s
+              transition: all $duration ease 0s
 
 
 
@@ -306,14 +314,10 @@ section.works
 
 
 
-  &.ng-leave
+  // &.ng-leave
 
-    $duration: 1.5s
-    $delay: 0.3s
+  //   transition: all 1s ease 1s
 
-    transition: all $duration ease 0s
-    opacity: 1
-
-    &.ng-leave-active
-      opacity: 0
+  //   &.ng-leave-active
+  //     filter: blur(5px)
 

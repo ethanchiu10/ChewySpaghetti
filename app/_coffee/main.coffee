@@ -40,6 +40,7 @@ app.directive     'blast',                require('./directives/Blast')
 app.controller    'AppCtrl',              require('./controllers/AppCtrl')
 app.controller    'IntroCtrl',            require('./controllers/IntroCtrl')
 app.controller    'WorksCtrl',            require('./controllers/WorksCtrl')
+app.controller    'ProjectCtrl',          require('./controllers/ProjectCtrl')
 app.controller    'ContactCtrl',          require('./controllers/ContactCtrl')
 
 

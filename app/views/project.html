@@ -1,0 +1,48 @@
+<section class="project">
+
+  <div class="spacing-block top"></div>
+
+  <div class="title">
+    <!-- <div class="title-wrap"> -->
+      <h1>{{ project.title }}</h1>
+      <h3>{{ project.company }}</h3>
+    <!-- </div> -->
+  </div>
+
+  <!-- <div class="spacing-block bottom"></div> -->
+
+
+  <div class="content">
+
+    <img class="block hero" ng-src="/images/{{ project.id }}/{{ project.hero }}" />
+
+    <p class="block description">
+      {{ project.description }}
+    </p>
+
+<!--     <div class="block technologies">
+      <h2>Key Technolgies</h2>
+      <ul>
+        <li ng-repeat="tech in project.technologies">
+          {{ tech }}
+        </li>
+      </ul>
+    </div> -->
+
+
+    <div class="block features">
+      <ul>
+        <li ng-repeat="feature in project.features">
+          <h2 class="name">{{ feature.name }}</h2>
+          <p class="info">{{ feature.info }}</p>
+          <img ng-src="/images/{{ project.id }}/{{ feature.image }}" />
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+</section>

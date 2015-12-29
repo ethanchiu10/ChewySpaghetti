@@ -1,0 +1,159 @@
+// *************************************
+//
+//  PROJECT
+//
+// *************************************
+
+@import "../variables"
+@import "../animations"
+
+
+
+
+// *************************************
+//  STYLING
+// *************************************
+section.project
+  position: relative
+  width: 100%
+  height: 100%
+  background-color: white
+  color: $cl-main
+  overflow: auto
+
+
+  .spacing-block
+    display: block
+    flex: 0
+    // background-color: yellow
+
+  .spacing-block
+    width: 100%
+
+  .title
+    width: 100%
+    text-align: center
+    padding-top: $frame * 2 + $frame-thickness
+
+  .content
+    width: 100%
+    line-height: 1.3em
+
+
+    >*
+      padding: 0px ($frame * 2 + $frame-thickness)
+
+
+
+  .hero
+    width: 100%
+    height: auto
+    margin-top: $frame
+
+
+
+
+  .description
+    margin: 5px 0px 25px
+
+
+
+  .technologies
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+    li
+      display: inline-block
+      margin-right: 20px
+
+
+  .features
+    width: 100%
+    padding-bottom: $frame * 2 + $frame-thickness
+
+    li
+      margin: 30px 0px 0px
+
+    .name
+      margin: 0px
+
+    .info
+      margin: 4px auto 10px
+
+    img
+      width: 100%
+
+
+
+
+
+
+
+
+
+
+
+// *************************************
+//  ANIMATION
+// *************************************
+.view-animate.project
+
+  $duration: 0.8s
+  $delay: 0.5s
+  $delay-per-block: 0.3s
+
+  &.ng-enter
+    transition: all ($duration * 2 + $delay-per-block * 5) ease 0s
+
+    section.project
+      display: flex
+      flex-direction: column
+      background-color: $cl-main
+      color: white
+      overflow: hidden
+
+    .spacing-block
+      flex: 1
+
+    .title
+      padding-top: 0
+
+    .content
+      flex: 1
+
+    .block
+      opacity: 0
+      transform: translateY(20vh)
+
+
+
+
+    &.ng-enter-active
+
+      section.project
+        background-color: white
+        color: $cl-main
+        transition: all $duration ease $delay
+
+      .spacing-block
+        flex: 0
+        transition: all $duration ease $delay
+
+      .title
+        padding-top: $frame * 2 + $frame-thickness
+        transition: padding-top $duration ease $delay
+
+      .block
+        opacity: 1
+        transform: none
+        @for $i from 1 through 5
+          &:nth-child(#{$i})
+            transition-property: transform, opacity
+            transition-duration: 0.8s
+            transition-timing-function: ease
+            transition-delay: $delay-per-block * $i + $duration
+
+
+
+
