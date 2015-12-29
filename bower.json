@@ -1,11 +1,11 @@
 {
-  "name": "HSBC IDD",
+  "name": "Chewy Spaghetti",
   "version": "0.0.1",
-  "homepage": "https://bitbucket.org/imagination/hsbc-idd",
+  "homepage": "https://github.com/ethanchiu10/chewyspaghetti",
   "authors": [
     "Ethan Chiu"
   ],
-  "description": "Interactive Digital Directory for the HSBC Main Building in Hong Kong",
+  "description": "Personal portfolio site",
   "dependencies": {
     "pixi.js": "~2.2.8"
   },

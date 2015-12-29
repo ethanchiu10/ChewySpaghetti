@@ -13,7 +13,7 @@ module.exports = [
         console.log "#### INIT AppCtrl"
 
         $scope.$on '$routeChangeSuccess', ( evt, currRoute, prevRoute )=>
-          console.log currRoute
+          # console.log currRoute
           $scope.curr = currRoute?.$$route?.originalPath
 
         $scope.color = "black"

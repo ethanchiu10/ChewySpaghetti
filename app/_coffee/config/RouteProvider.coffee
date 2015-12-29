@@ -7,17 +7,26 @@ module.exports = [
   ($routeProvider)->
     console.log "#### INIT RouteProvider"
 
-    animResolve = (time)->
+    animResolve = ( delayMap={} )->
       ["$q", "$timeout", "HistoryService", ($q, $timeout, HistoryService)->
-        return true if HistoryService.history.length < 1
-        console.log "DELAYING BY: ", time
+        # return true if HistoryService.history.length < 1
+
+        prevPath = HistoryService.getPrevious()?.$$route?.originalPath
+
+        console.log 999, HistoryService.history, prevPath, delayMap
+
+        time = delayMap[ prevPath ] || 0
+
+        console.log "DELAY ANIM BY:", prevPath, prevPath in delayMap, time
+
+
         delay = $q.defer()
         $timeout delay.resolve, time, false
-        delay.promise
+        return delay.promise
       ]
 
     dataResolve = (time)->
-      console.log 'dataResolve'
+      # console.log 'dataResolve'
       ["DataService", (DataService)->
         DataService.getProjects()
       ]
@@ -30,14 +39,16 @@ module.exports = [
         templateUrl: '/views/intro.html'
         controller: 'IntroCtrl'
         resolve: {
-          anim: animResolve(0)
+          anim: animResolve()
         }
       })
       .when('/works', {
         templateUrl: '/views/works.html'
         controller: 'WorksCtrl'
         resolve: {
-          anim: animResolve(2000),
+          anim: animResolve({
+            "/intro": 2000
+          }),
           data: dataResolve()
         }
       })
@@ -45,7 +56,7 @@ module.exports = [
         templateUrl: '/views/project.html'
         controller: 'ProjectCtrl'
         resolve: {
-          anim: animResolve(0),
+          anim: animResolve(),
           data: dataResolve()
         }
       })
@@ -53,7 +64,7 @@ module.exports = [
         templateUrl: '/views/contact.html'
         controller: 'ContactCtrl'
         resolve: {
-          anim: animResolve(3500)
+          anim: animResolve()
         }
       })
       .otherwise({

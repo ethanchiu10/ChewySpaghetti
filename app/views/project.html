@@ -31,10 +31,14 @@
 
 
     <div class="block features">
-      <ul>
-        <li ng-repeat="feature in project.features">
+      <ul class="feature-list">
+        <li class="feature" ng-repeat="feature in project.features">
           <h2 class="name">{{ feature.name }}</h2>
-          <p class="info">{{ feature.info }}</p>
+          <ul class="info">
+            <li ng-repeat="info in feature.info">
+              {{ info }}
+            </li>
+          </ul>
           <img ng-src="/images/{{ project.id }}/{{ feature.image }}" />
         </li>
       </ul>

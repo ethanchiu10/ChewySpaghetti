@@ -42,18 +42,36 @@
     "features": [
       {
         "name": "Directory Listing",
-        "info": "3D animated Coverflow sortable by category or alphabetically",
+        "info": [
+          "3D animated Coverflow",
+          "Sortable by category or alphabetically"
+        ],
         "image": "coverflow.png"
       },
       {
-        "name": "Map",
-        "info": "Pannable, rotatable, zoomable, color coded 3D map",
+        "name": "3D Map",
+        "info": [
+          "Can be panned, rotated, and zoomed",
+          "Color coded to highlight important locations"
+        ],
         "image": "services.png"
       },
       {
-        "name": "Directory Listing",
-        "info": "3D animated Coverflow sortable by category or alphabetically",
-        "image": "coverflow.png"
+        "name": "Smart Wayfinding",
+        "info": [
+          "Dynamic smart routing logic",
+          "Shortest route or under 21 route"
+        ],
+        "image": "wayfind.png"
+      },
+      {
+        "name": "Wayfind Management System",
+        "info": [
+          "Manage nodes and paths",
+          "Single directional lines for custom traffic control",
+          "Multi floor support"
+        ],
+        "image": "editor.png"
       }
     ]
 
