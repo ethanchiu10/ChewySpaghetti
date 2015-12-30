@@ -32,22 +32,44 @@
   top: $frame + $frame-thickness
   right: $frame + $frame-thickness
 
-  background: transparent
-  z-index: 500
-
-  transition-property: -webkit-clip-path, clip-path, background
-  transition-duration: $menu-speed, $menu-speed, 0s
-  transition-timing-function: ease
-  transition-delay: 0s, 0s, $menu-speed
-
-  width: calc(100% - #{$frame * 2 + $frame-thickness * 2})
-  height: calc(100% - #{$frame * 2 + $frame-thickness * 2})
-
   display: flex
   justify-content: center
   align-items: center
 
-  clip-path: polygon(calc(100% - #{$menu - $frame-thickness}) 0%, 100% 0%, 100% #{$menu - $frame-thickness}, calc(100% - #{$menu - $frame-thickness}) #{$menu - $frame-thickness})
+  background: transparent
+  z-index: 500
+  pointer-events: none
+
+  width: calc(100% - #{$frame * 2 + $frame-thickness * 2})
+  height: calc(100% - #{$frame * 2 + $frame-thickness * 2})
+
+  svg
+    transition-property: clip-path, -webkit-clip-path, fill
+    transition-duration: $menu-speed, $menu-speed, 0s
+    transition-timing-function: ease
+    transition-delay: 0s, 0s, $menu-speed
+    width: 100%
+    height: 100%
+
+    fill: transparent
+    clip-path: polygon(calc(100% - #{$menu - $frame-thickness}) 0%, 100% 0%, 100% #{$menu - $frame-thickness}, calc(100% - #{$menu - $frame-thickness}) #{$menu - $frame-thickness})
+
+
+  .contact-wrap
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+
+  .contact-info
+    position: relative
+    left: 50%
+    top: 50%
+    width: 400px
+    height: 400px
+    margin-left: -234px
+    margin-top: -205px
 
 
   &.invert
@@ -58,12 +80,17 @@
 
 
   &.active
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-    background: white
-    transition-delay: 0s, 0s, 0s !important
+    pointer-events: all
+
+    svg
+      fill: white
+      transition-delay: 0s, 0s, 0s !important
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+
 
     &.invert
-      background: $cl-main
+      svg
+        fill: $cl-main
 
 
 

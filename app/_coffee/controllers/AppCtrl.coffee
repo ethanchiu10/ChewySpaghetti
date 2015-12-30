@@ -21,6 +21,7 @@ module.exports = [
 
         $scope.$on '$routeChangeSuccess', ( evt, currRoute, prevRoute )=>
           $scope.curr = currRoute?.$$route?.originalPath
+          $scope.showContact = false
           console.log "AppCtrl.scope.curr", $scope.curr
           ga 'send', 'pageview', $location.path()
 
