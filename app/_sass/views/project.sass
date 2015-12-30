@@ -178,4 +178,22 @@ section.project
 
 
 
+  &.ng-leave
+    transition: all ($duration + $delay-per-block * 3 + $duration) ease 0s
+    $duration: 0.8s
+
+    &.ng-leave-active
+
+      section.project
+        background-color: white
+        color: $cl-main
+        transition: all $duration ease 0s
+
+        >*
+          opacity: 0
+          transition: opacity $duration ease 0s
+
+
+
+
 

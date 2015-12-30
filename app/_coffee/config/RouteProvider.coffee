@@ -13,6 +13,8 @@ module.exports = [
 
         prevPath = HistoryService.getPrevious()?.$$route?.originalPath
 
+        console.log 3333, prevPath
+
         # console.log 999, HistoryService.history, prevPath, delayMap
 
         time = delayMap[ prevPath ] || 0
@@ -48,6 +50,7 @@ module.exports = [
         resolve: {
           anim: animResolve({
             "/intro": 2000
+            "/project/:id": 800
           }),
           data: dataResolve()
         }

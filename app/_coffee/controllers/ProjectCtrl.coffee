@@ -14,6 +14,11 @@ module.exports = [
       constructor: ()->
         console.log "#### INIT ProjectCtrl"
         $scope.pageName = @name
+
+        $scope.$on '$routeChangeStart', ( evt, currRoute, prevRoute )=>
+          angular.element( document.querySelector("div[ng-view].#{@name}") ).addClass('ng-leave')
+          angular.element( document.querySelector("div[ng-view].#{@name}") ).addClass('ng-leave-active')
+
         @init()
 
       init: ()->
