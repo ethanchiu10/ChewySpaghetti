@@ -17,17 +17,11 @@ require 'angular-animate'
 require 'angular-touch'
 require 'angular-swipe/src/angular-swipe'
 
-# require 'gsap/src/minified/TweenLite.min'
-# require 'gsap/src/minified/TweenMax.min'
-
-
 
 #######################################################
 # Setup
 #######################################################
 app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch', 'swipe'])
-
-
 
 # app.factory       'RendererService',      require('./services/RendererService')
 # app.factory       'LineService',          require('./services/LineService')
@@ -41,8 +35,6 @@ app.controller    'AppCtrl',              require('./controllers/AppCtrl')
 app.controller    'IntroCtrl',            require('./controllers/IntroCtrl')
 app.controller    'WorksCtrl',            require('./controllers/WorksCtrl')
 app.controller    'ProjectCtrl',          require('./controllers/ProjectCtrl')
-app.controller    'ContactCtrl',          require('./controllers/ContactCtrl')
-
 
 app.config require('./config/RouteProvider')
 

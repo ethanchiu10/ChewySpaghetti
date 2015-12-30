@@ -13,13 +13,15 @@ module.exports = [
         console.log "#### INIT AppCtrl"
 
         $scope.$on '$routeChangeSuccess', ( evt, currRoute, prevRoute )=>
-          # console.log currRoute
           $scope.curr = currRoute?.$$route?.originalPath
+          console.log "AppCtrl.scope.curr", $scope.curr
 
         $scope.color = "black"
         $scope.$watch 'color', (next, prev)->
           return if prev == next
           ColorService.setColor next
+
+        $scope.showContact = false
 
 
     window.AppCtrl = new AppCtrl()

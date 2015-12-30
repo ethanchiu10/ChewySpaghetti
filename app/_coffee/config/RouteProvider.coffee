@@ -60,13 +60,6 @@ module.exports = [
           data: dataResolve()
         }
       })
-      .when('/contact', {
-        templateUrl: '/views/contact.html'
-        controller: 'ContactCtrl'
-        resolve: {
-          anim: animResolve()
-        }
-      })
       .otherwise({
         redirectTo: '/intro'
       })

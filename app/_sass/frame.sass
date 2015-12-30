@@ -19,38 +19,66 @@
   height: 100%
   pointer-events: none
   mix-blend-mode: $blend-mode
-  z-index: 1000
+  z-index: 10000
 
   >div
     position: absolute
-    z-index: 10000
-
 
   .line
     background-color: $cl-main-i
+    transition: all $menu-speed ease 0s
 
     &.top, &.bottom
-      width: calc(100% - #{$frame * 2})
       height: $frame-thickness
       left: $frame
 
     &.left, &.right
-      height: calc(100% - #{$frame * 2})
       width: $frame-thickness
-      top: $frame
+      bottom: $frame
 
     &.top
       top: $frame
+      width: calc(100% - #{$frame * 2 + $menu})
 
     &.bottom
       bottom: $frame
+      width: calc(100% - #{$frame * 2})
 
     &.left
       left: $frame
+      height: calc(100% - #{$frame * 2})
 
     &.right
+      right: $frame
+      height: calc(100% - #{$frame * 2 + $menu})
+
+    &.corner-left
+      width: $frame-thickness
+      height: $menu + $frame-thickness
+      top: $frame
+      right: $menu + $frame
+
+    &.corner-bottom
+      height: $frame-thickness
+      width: $menu + $frame-thickness
+      top: $menu + $frame
       right: $frame
 
 
 
+  &.showContact
 
+    .line
+      &.top
+        width: 0%
+
+      &.right
+        height: 0%
+
+      &.corner-left
+        height: calc(100% - #{$frame * 2})
+        right: calc(100% - #{$frame + $frame-thickness})
+
+      &.corner-bottom
+        width: calc(100% - #{$frame * 2 + $frame-thickness})
+        top: calc(100% - #{$frame + $frame-thickness})
