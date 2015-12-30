@@ -44,6 +44,9 @@
   height: calc(100% - #{$frame * 2 + $frame-thickness * 2})
 
   svg
+    position: absolute
+    top: 0
+    left: 0
     transition-property: clip-path, -webkit-clip-path, fill
     transition-duration: $menu-speed, $menu-speed, 0s
     transition-timing-function: ease
@@ -52,7 +55,10 @@
     height: 100%
 
     fill: transparent
+
     clip-path: polygon(calc(100% - #{$menu - $frame-thickness}) 0%, 100% 0%, 100% #{$menu - $frame-thickness}, calc(100% - #{$menu - $frame-thickness}) #{$menu - $frame-thickness})
+    // clip-path: polygon(calc(100% - #{$menu + $frame-thickness}) 0%,      100% 0%,    100% 100%,    0% 100%)
+
 
 
   .contact-wrap
