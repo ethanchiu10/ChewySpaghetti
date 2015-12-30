@@ -17,8 +17,13 @@ section.project
   position: relative
   width: 100%
   height: 100%
-  background-color: white
-  color: $cl-main
+
+  // background-color: white
+  // color: $cl-main
+
+  background-color: $cl-main
+  color: white
+
   overflow: auto
 
   &::-webkit-scrollbar
@@ -88,7 +93,7 @@ section.project
       margin: 0px
 
     .info
-      margin: 1vh 20px 2vh
+      margin: 1vh $frame 2vh
 
       li
         list-style-type: disc
@@ -144,8 +149,8 @@ section.project
     &.ng-enter-active
 
       section.project
-        background-color: white
-        color: $cl-main
+        // background-color: white
+        // color: $cl-main
         transition: all $duration ease $delay
 
       .spacing-block

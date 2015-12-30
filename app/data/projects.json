@@ -30,7 +30,7 @@
           "Can be panned, rotated, and zoomed",
           "Color coded to highlight important locations"
         ],
-        "image": "services.png"
+        "image": "map.png"
       },
       {
         "name": "Smart Wayfinding",
@@ -78,14 +78,14 @@
         "info": [
           "Register and Login with your WeChat account"
         ],
-        "image": "01_login.png"
+        "image": "login.png"
       },
       {
         "name": "Multiple Models",
         "info": [
           "Supports multiple models"
         ],
-        "image": "04_select.png"
+        "image": "model.png"
       },
       {
         "name": "3D Car Model",
@@ -94,14 +94,14 @@
           "NFC enabled Paint Swatches allows users to see and feel the final physical material",
           "Rotatable 3D Model"
         ],
-        "image": "08_paint.png"
+        "image": "paint.png"
       },
       {
         "name": "Interior Configuration",
         "info": [
           "Select seat color and trim"
         ],
-        "image": "11_interior.png"
+        "image": "seat.png"
       }
     ]
 
@@ -181,7 +181,132 @@
       }
     ]
 
+  },
+
+
+
+
+  {
+    "id": "ford-applink-inspire",
+    "title": "iPad Multiplayer Game",
+    "company": "Ford Taiwan",
+    "country": "Taiwan",
+    "url": null,
+    "description": "At the Ford booth at Computex 2014, a japanese artist would create a drawing of you, and you will be inserted into a Find Waldo type iPad game. Race against your friend to find all the characters and items!",
+    "technologies": [
+      "HTML5",
+      "CoffeeScript",
+      "AngularJS",
+      "pixi.js"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Put yourself in the game!",
+        "info": [
+          "In collaboration with Ic4Design, a drawing of you will be inserted in to the game!"
+        ],
+        "image": "chara.jpg"
+      },
+      {
+        "name": "Login",
+        "info": [
+          "Login to your character with the code printed on your gift postcard"
+        ],
+        "image": "logo.png"
+      },
+      {
+        "name": "Multiplayer",
+        "info": [
+          "Race to find all the characters hidden in the game!"
+        ],
+        "image": "game.png"
+      }
+    ]
+
+  },
+
+
+
+  {
+    "id": "imag-xmas",
+    "title": "Christmas eCard",
+    "company": "Imagination Hong Kong",
+    "country": "Hong Kong",
+    "url": null,
+    "description": "Have a Cracking Christmas by breaking open your digital christmas cracker and seeing whats inside!",
+    "technologies": [
+      "HTML5",
+      "CoffeeScript",
+      "AngularJS"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Joke",
+        "info": [
+          "Read hilarious dad jokes! Open more crackers to see more!"
+        ],
+        "image": "menu.png"
+      },
+      {
+        "name": "Toy Hat",
+        "info": [
+          "Put on your christmas cracker hat by taking a selfie!"
+        ],
+        "image": "toy.png"
+      }
+    ]
+
+  },
+
+
+  {
+    "id": "pacific-place-web",
+    "title": "Mall Website",
+    "company": "Swire Pacific Place",
+    "country": "Hong Kong",
+    "url": null,
+    "description": "A brand new website for the Pacific Place luxury mall in Hong Kong",
+    "technologies": [
+      "HTML5",
+      "SASS"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Responsive",
+        "info": [
+          "Mobile and desktop friendly"
+        ],
+        "image": "responsive.png"
+      },
+      {
+        "name": "Map location",
+        "info": [
+          "See the location of shops and restaurants on a map"
+        ],
+        "image": "map.png"
+      },
+      {
+        "name": "Cinema Integration",
+        "info": [
+          "Book movie tickets immediately"
+        ],
+        "image": "movies.png"
+      }
+
+    ]
+
   }
 
 
 ]
+
+
+
+
+
+
+
+

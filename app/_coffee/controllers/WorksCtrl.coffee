@@ -10,6 +10,8 @@ module.exports = [
     class WorksCtrl
 
       name: "works"
+      numItemsPerPage: 4
+      currentIndex: 0
 
       constructor: ()->
         console.log "#### INIT WorksCtrl"
@@ -22,13 +24,14 @@ module.exports = [
 
 
       init: ()->
-        $scope.projects = DataService.projects
-        numItemsPerPage = 4
-        for project, i in $scope.projects
-          project.page = Math.floor(i / numItemsPerPage)
 
-        $scope.numPages = Math.ceil(i / numItemsPerPage)
-        $scope.currentPage = 0
+        @projects = DataService.projects
+
+        projects = []
+        projects = projects.concat @projects[@currentIndex..@currentIndex + @numItemsPerPage - 1]
+        projects = projects.concat @projects
+        projects = projects[0..(@numItemsPerPage - 1)]
+        @updatePage projects
 
 
 
@@ -38,24 +41,42 @@ module.exports = [
           order: order
           project: project
         $timeout ()->
-
           $location.path "/project/#{project.id}"
         , 1500
 
 
-      nextPage: ()->
+      nextPage: ()=>
         angular.element( document.querySelector('.items') ).removeClass('down').addClass('up')
-        $scope.currentPage += 1
-        if $scope.currentPage >= $scope.numPages
-          $scope.currentPage = 0
+
+        @currentIndex += @numItemsPerPage
+        if @currentIndex > @projects.length
+          @currentIndex = @currentIndex - @projects.length
+
+        @updatePage()
 
 
-      prevPage: ()->
+      prevPage: ()=>
         angular.element( document.querySelector('.items') ).removeClass('up').addClass('down')
-        $scope.currentPage -= 1
-        if $scope.currentPage < 0
-          $scope.currentPage = $scope.numPages - 1
 
+        @currentIndex -= @numItemsPerPage
+        if @currentIndex < 0
+          @currentIndex = @projects.length + @currentIndex
+
+        @updatePage()
+
+
+
+      updatePage: ()=>
+
+        projects = []
+        projects = projects.concat @projects[@currentIndex..@currentIndex + @numItemsPerPage - 1]
+        projects = projects.concat @projects
+        projects = projects[0..(@numItemsPerPage - 1)]
+
+        $scope.projects = []
+        for project in projects
+          $scope.projects.push _.clone(project)
+        console.log "updatePage", _.pluck($scope.projects, 'id')
 
 
 
