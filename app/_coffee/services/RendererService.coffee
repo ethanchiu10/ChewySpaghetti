@@ -17,7 +17,7 @@ module.exports = [
         @init()
 
       init: ()=>
-        @stage = new PIXI.Stage(0xFFFFFF)
+        @stage = new PIXI.Stage(0xFFFFFF, false)
         @renderer = PIXI.autoDetectRenderer(
           window.innerWidth
           window.innerHeight

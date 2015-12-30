@@ -23,8 +23,8 @@ require 'angular-swipe/src/angular-swipe'
 #######################################################
 app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch', 'swipe'])
 
-# app.factory       'RendererService',      require('./services/RendererService')
-# app.factory       'LineService',          require('./services/LineService')
+app.factory       'RendererService',      require('./services/RendererService')
+app.factory       'LineService',          require('./services/LineService')
 app.factory       'HistoryService',       require('./services/HistoryService')
 app.factory       'ColorService',         require('./services/ColorService')
 app.factory       'DataService',          require('./services/DataService')
