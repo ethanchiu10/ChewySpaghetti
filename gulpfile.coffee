@@ -104,7 +104,7 @@ gulp.task "scripts", ->
     ))
     .on("error", displayError)
     .pipe(concat("bundle.js"))
-    # .pipe(uglify())
+    .pipe(uglify())
     .pipe gulp.dest("./app/scripts")
     .pipe( livereload() )
 
