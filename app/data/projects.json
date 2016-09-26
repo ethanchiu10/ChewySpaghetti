@@ -1,9 +1,104 @@
 [
 
   {
+    "id": "jordan-court-zero",
+    "title": "Location-based Game",
+    "subtitle": "Jordan Brand",
+    "date": "2015-05-01",
+    "country": "China",
+    "url": null,
+    "description": "A secret court made to challenge the ballers of China. To get in, players must go to the site to find the nearest courts through GPS location and take on the challenges. Winners go to Court Zero and meet Russell Westbrook",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "CoffeeScript",
+      "AngularJS",
+      "pixi.js"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Video to 3D Intro",
+        "info": [
+          "A video transitions smoothly into an interactive 3d webgl logo"
+        ],
+        "image": "1-logo.jpg"
+      },
+      {
+        "name": "Circular Dial Menu",
+        "info": [
+          "Spin the unique circular dial to select a challenge"
+        ],
+        "image": "3-challenges.jpg"
+      },
+      {
+        "name": "Baidu and Google Map",
+        "info": [
+          "Use the custom styled map to find the nearest basketball court",
+          "Both Baidu Maps and Google Maps is supported depending on the user's location"
+        ],
+        "image": "4-map.jpg"
+      },
+      {
+        "name": "Photo Filter",
+        "info": [
+          "Each challenge comes with its unique photo filter using blend modes",
+          "Photo can be moved and scaled"
+        ],
+        "image": "5-filter.jpg"
+      },
+      {
+        "name": "Award",
+        "info": [
+          "Won CSS Design Award"
+        ],
+        "image": "6-award.jpg"
+      }
+    ]
+
+  },
+
+  {
+    "id": "air-max-day-2016",
+    "title": "Photo Sticker",
+    "subtitle": "Nike Sportswear",
+    "date": "2015-05-01",
+    "country": "China",
+    "url": null,
+    "description": "A WeChat Moment Ad to celebrate 29 years of Air Max. Users can upload a photo and put Air Max stickers on top",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "CoffeeScript",
+      "AngularJS",
+      "pixi.js"
+    ],
+    "hero": "hero.png",
+    "features": [
+      {
+        "name": "Infinite Scroller",
+        "info": [
+          "60fps infinite scroller in WebGL",
+          "Items tilt depending on scroll direction"
+        ],
+        "image": "showcase.jpeg"
+      },
+      {
+        "name": "Photo Sticker",
+        "info": [
+          "Stickers can be moved, rotated, and scaled"
+        ],
+        "image": "stickers.jpeg"
+      }
+    ]
+
+  },
+
+  {
     "id": "galaxy-idd",
     "title": "Casino Directory",
-    "company": "Galaxy Macau",
+    "subtitle": "Galaxy Macau",
+    "date": "2015-05-01",
     "country": "Macau",
     "url": null,
     "description": "A beautifully animated interactive digital directory including a 3D CoverFlow and 3D Map",
@@ -58,7 +153,8 @@
   {
     "id": "lincoln-ps",
     "title": "Car Configurator",
-    "company": "Lincoln China",
+    "subtitle": "Lincoln China",
+    "date": "2015-10-01",
     "country": "China",
     "url": null,
     "description": "The Lincoln Personalization Studio is a 3D Car Configurator used at dealerships throughout China",
@@ -110,7 +206,8 @@
   {
     "id": "art-basel-fontart",
     "title": "Digital Art",
-    "company": "UBS Art Basel",
+    "subtitle": "UBS Art Basel",
+    "date": "2014-06-01",
     "country": "Hong Kong",
     "url": null,
     "description": "Create a digital art piece simply by tweeting #UBSArt at the VIP Lounge at Art Basel 2014",
@@ -146,7 +243,8 @@
   {
     "id": "ge-innovation-turkey",
     "title": "Data Visualization",
-    "company": "GE Turkey",
+    "subtitle": "GE Turkey",
+    "date": "2015-06-01",
     "country": "Hong Kong",
     "url": null,
     "description": "Several data visualization activations were created for the GE Innovation Center in Istanbul, Turkey",
@@ -189,7 +287,8 @@
   {
     "id": "ford-applink-inspire",
     "title": "iPad Multiplayer Game",
-    "company": "Ford Taiwan",
+    "subtitle": "Ford Taiwan",
+    "date": "2014-06-01",
     "country": "Taiwan",
     "url": null,
     "description": "At the Ford booth at Computex 2014, a japanese artist would create a drawing of you, and you will be inserted into a Find Waldo type iPad game. Race against your friend to find all the characters and items!",
@@ -231,7 +330,8 @@
   {
     "id": "imag-xmas",
     "title": "Christmas eCard",
-    "company": "Imagination Hong Kong",
+    "subtitle": "Imagination Hong Kong",
+    "date": "2014-12-01",
     "country": "Hong Kong",
     "url": null,
     "description": "Have a Cracking Christmas by breaking open your digital christmas cracker and seeing whats inside!",
@@ -264,7 +364,8 @@
   {
     "id": "pacific-place-web",
     "title": "Mall Website",
-    "company": "Swire Pacific Place",
+    "subtitle": "Swire Pacific Place",
+    "date": "2013-11-01",
     "country": "Hong Kong",
     "url": null,
     "description": "A brand new website for the Pacific Place luxury mall in Hong Kong",
