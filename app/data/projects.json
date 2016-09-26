@@ -15,7 +15,7 @@
       "AngularJS",
       "pixi.js"
     ],
-    "hero": "hero.png",
+    "hero": "hero.jpg",
     "features": [
       {
         "name": "Video to 3D Intro",
@@ -117,7 +117,7 @@
           "3D animated Coverflow",
           "Sortable by category or alphabetically"
         ],
-        "image": "coverflow.png"
+        "image": "coverflow.jpg"
       },
       {
         "name": "3D Map",
@@ -125,7 +125,7 @@
           "Can be panned, rotated, and zoomed",
           "Color coded to highlight important locations"
         ],
-        "image": "map.png"
+        "image": "map.jpg"
       },
       {
         "name": "Smart Wayfinding",
@@ -133,7 +133,7 @@
           "Dynamic smart routing logic",
           "Shortest route or under 21 route"
         ],
-        "image": "wayfind.png"
+        "image": "wayfind.jpg"
       },
       {
         "name": "Wayfind Management System",
@@ -142,7 +142,7 @@
           "Single directional lines for custom traffic control",
           "Multi floor support"
         ],
-        "image": "editor.png"
+        "image": "editor.jpg"
       }
     ]
 
@@ -174,14 +174,14 @@
         "info": [
           "Register and Login with your WeChat account"
         ],
-        "image": "login.png"
+        "image": "login.jpg"
       },
       {
         "name": "Multiple Models",
         "info": [
           "Supports multiple models"
         ],
-        "image": "model.png"
+        "image": "model.jpg"
       },
       {
         "name": "3D Car Model",
@@ -190,14 +190,14 @@
           "NFC enabled Paint Swatches allows users to see and feel the final physical material",
           "Rotatable 3D Model"
         ],
-        "image": "paint.png"
+        "image": "paint.jpg"
       },
       {
         "name": "Interior Configuration",
         "info": [
           "Select seat color and trim"
         ],
-        "image": "seat.png"
+        "image": "seat.jpg"
       }
     ]
 
@@ -225,14 +225,14 @@
         "info": [
           "See your tween turned in to art in real time"
         ],
-        "image": "sample.png"
+        "image": "sample.jpg"
       },
       {
         "name": "Unique Pieces",
         "info": [
           "Every piece generated is completely unique, even if you text the same thing as your friend!"
         ],
-        "image": "sample2.png"
+        "image": "sample2.jpg"
       }
     ]
 
@@ -254,28 +254,28 @@
       "AngularJS",
       "three.js"
     ],
-    "hero": "hero.png",
+    "hero": "hero.jpg",
     "features": [
       {
         "name": "Innovation Barometer",
         "info": [
           "Shows which countries are the most innovative and supportive of innovation"
         ],
-        "image": "barometer.png"
+        "image": "barometer.jpg"
       },
       {
         "name": "Trends Table",
         "info": [
           "View articles on the latest GE innovation trends and concepts"
         ],
-        "image": "trends.png"
+        "image": "trends.jpg"
       },
       {
         "name": "Stylus",
         "info": [
           "View articles on the latest GE innovation examples"
         ],
-        "image": "stylus.png"
+        "image": "stylus.jpg"
       }
     ]
 
@@ -298,7 +298,7 @@
       "AngularJS",
       "pixi.js"
     ],
-    "hero": "hero.png",
+    "hero": "hero.jpg",
     "features": [
       {
         "name": "Put yourself in the game!",
@@ -312,14 +312,14 @@
         "info": [
           "Login to your character with the code printed on your gift postcard"
         ],
-        "image": "logo.png"
+        "image": "logo.jpg"
       },
       {
         "name": "Multiplayer",
         "info": [
           "Race to find all the characters hidden in the game!"
         ],
-        "image": "game.png"
+        "image": "game.jpg"
       }
     ]
 
@@ -340,21 +340,21 @@
       "CoffeeScript",
       "AngularJS"
     ],
-    "hero": "hero.png",
+    "hero": "hero.jpg",
     "features": [
       {
         "name": "Joke",
         "info": [
           "Read hilarious dad jokes! Open more crackers to see more!"
         ],
-        "image": "menu.png"
+        "image": "menu.jpg"
       },
       {
         "name": "Toy Hat",
         "info": [
           "Put on your christmas cracker hat by taking a selfie!"
         ],
-        "image": "toy.png"
+        "image": "toy.jpg"
       }
     ]
 
@@ -373,28 +373,28 @@
       "HTML5",
       "SASS"
     ],
-    "hero": "hero.png",
+    "hero": "hero.jpg",
     "features": [
       {
         "name": "Responsive",
         "info": [
           "Mobile and desktop friendly"
         ],
-        "image": "responsive.png"
+        "image": "responsive.jpg"
       },
       {
         "name": "Map location",
         "info": [
           "See the location of shops and restaurants on a map"
         ],
-        "image": "map.png"
+        "image": "map.jpg"
       },
       {
         "name": "Cinema Integration",
         "info": [
           "Book movie tickets immediately"
         ],
-        "image": "movies.png"
+        "image": "movies.jpg"
       }
 
     ]
